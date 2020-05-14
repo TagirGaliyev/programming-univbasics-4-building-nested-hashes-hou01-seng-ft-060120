@@ -5,5 +5,5 @@ def base_hash
 
 end
 
-new_hash = **base_hash
+new_hash = *base_hash
 puts new_hash
