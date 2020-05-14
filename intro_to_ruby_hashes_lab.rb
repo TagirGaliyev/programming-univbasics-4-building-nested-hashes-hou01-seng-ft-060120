@@ -22,7 +22,17 @@ def monopoly_with_third_tier
   # you built in the previous method. Run the tests. They will fail, but
   # they'll guide you in how to modify what you just did to have more
   # complexity.
+  new_hash = monopoly_with_second_tier
+  new_hash[:railroads][:rent_in_dollars][:one_piece_owned] = 25
+  new_hash[:railroads][:rent_in_dollars][:two_piece_owned] = 50
+  new_hash[:railroads][:rent_in_dollars][:three_piece_owned] = 100
+  new_hash[:railroads][:rent_in_dollars][:four_piece_owned] = 200
 
+  new_hash[:railroads][:names][:reading_railroad] = {}
+  new_hash[:railroads][:names][:pennsylvania_railroad] = {}
+  new_hash[:railroads][:names][:b_and_o_railroad] = {}
+  new_hash[:railroads][:names][:shortline_railroad] = {}
+  new_hash
 end
 
 def monopoly_with_fourth_tier
